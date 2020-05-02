@@ -5,6 +5,7 @@ import fr.xephi.authme.security.crypts.description.Recommendation;
 import fr.xephi.authme.security.crypts.description.Usage;
 import fr.xephi.authme.util.RandomStringUtils;
 
+@Deprecated
 @Recommendation(Usage.DEPRECATED)
 public class DynamicBungeeAuthSaltedSha512 extends SeparateSaltMethod {
 
