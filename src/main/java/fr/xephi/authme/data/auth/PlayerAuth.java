@@ -43,6 +43,7 @@ public class PlayerAuth {
     private float yaw;
     private float pitch;
     private UUID uuid;
+    private int premium;
 
     /**
      * Hidden constructor.
@@ -180,6 +181,14 @@ public class PlayerAuth {
         this.uuid = uuid;
     }
 
+    public int isPremium() {
+        return premium;
+    }
+
+    public void setPremium(int premium) {
+        this.premium = premium;
+    }
+
     @Override
     public boolean equals(Object obj) {
         if (!(obj instanceof PlayerAuth)) {
@@ -231,6 +240,7 @@ public class PlayerAuth {
         private float yaw;
         private float pitch;
         private UUID uuid;
+        private int premium;
 
         /**
          * Creates a PlayerAuth object.
@@ -257,6 +267,7 @@ public class PlayerAuth {
             auth.yaw = yaw;
             auth.pitch = pitch;
             auth.uuid = uuid;
+            auth.premium = premium;
             return auth;
         }
 
@@ -366,6 +377,11 @@ public class PlayerAuth {
 
         public Builder uuid(UUID uuid) {
             this.uuid = uuid;
+            return this;
+        }
+
+        public Builder premium(int premium) {
+            this.premium = premium;
             return this;
         }
     }

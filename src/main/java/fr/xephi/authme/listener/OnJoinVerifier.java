@@ -84,6 +84,18 @@ public class OnJoinVerifier implements Reloadable {
     /**
      * Checks whether non-registered players should be kicked, and if so, whether the player should be kicked.
      *
+     * @param isPremium whether or not the player is registered
+     * @throws FailedVerificationException if the verification fails
+     */
+    public void checkKickPremium(int isPremium) throws FailedVerificationException {
+        if (isPremium == 1) {
+            throw new FailedVerificationException(MessageKey.NON_PREMIUM_ONLY_MESSAGE);
+        }
+    }
+
+    /**
+     * Checks whether non-registered players should be kicked, and if so, whether the player should be kicked.
+     *
      * @param isAuthAvailable whether or not the player is registered
      * @throws FailedVerificationException if the verification fails
      */

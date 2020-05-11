@@ -142,6 +142,7 @@ public class PlayerListener implements Listener {
         try {
             final PlayerAuth auth = dataSource.getAuth(name);
             final boolean isAuthAvailable = auth != null;
+            onJoinVerifier.checkKickPremium(auth.isPremium());
             onJoinVerifier.checkKickNonRegistered(isAuthAvailable);
             onJoinVerifier.checkAntibot(name, isAuthAvailable);
             onJoinVerifier.checkNameCasing(name, auth);

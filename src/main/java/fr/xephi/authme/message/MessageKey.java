@@ -86,6 +86,9 @@ public enum MessageKey {
     /** Your IP has been changed and your session data has expired! */
     SESSION_EXPIRED("session.invalid_session"),
 
+    /** Only non-premium users can join the server! Please visit http://example.com to play! */
+    NON_PREMIUM_ONLY_MESSAGE("error.premium"),
+
     /** Only registered users can join the server! Please visit http://example.com to register yourself! */
     MUST_REGISTER_MESSAGE("registration.reg_only"),
 

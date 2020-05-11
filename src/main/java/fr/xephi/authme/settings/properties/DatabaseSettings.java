@@ -133,6 +133,10 @@ public final class DatabaseSettings implements SettingsHolder {
     public static final Property<String> MYSQL_COL_PLAYER_UUID =
         newProperty( "DataSource.mySQLPlayerUUID", "" );
 
+    @Comment("Column for storing players premium status")
+    public static final Property<String> MYSQL_COL_PREMIUM =
+        newProperty( "DataSource.mySQLPremium", "isPremium" );
+
     @Comment("Column for storing players groups")
     public static final Property<String> MYSQL_COL_GROUP =
         newProperty("ExternalBoardOptions.mySQLColumnGroup", "");
