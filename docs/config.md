@@ -72,6 +72,8 @@ DataSource:
     mySQLlastlocPitch: pitch
     # Column for storing players uuids (optional)
     mySQLPlayerUUID: ''
+    # Column for storing players premium status
+    mySQLPremium: 'isPremium'
     # Overrides the size of the DB Connection Pool, default = 10
     poolSize: 10
     # The maximum lifetime of a connection in the pool, default = 1800 seconds
