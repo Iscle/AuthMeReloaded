@@ -42,6 +42,7 @@ error:
   kick_for_vip: '&3A VIP player has joined the server when it was full!'
   logged_in: '&cYou''re already logged in!'
   kick_unresolved_hostname: '&cAn error occurred: unresolved player hostname!'
+  premium: '&cYou''re trying to log in with a premium account!'
 
 # AntiBot
 antibot:
